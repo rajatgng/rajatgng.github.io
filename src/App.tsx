@@ -10,6 +10,7 @@ function App() {
         <p>
           Portfolio Under Development.
         </p>
+        <p>See you soon.</p>
         <a
           className="App-link"
           href="https://www.linkedin.com/in/rajat-verma/"
