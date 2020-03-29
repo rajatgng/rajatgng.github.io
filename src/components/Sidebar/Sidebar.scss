@@ -1,0 +1,33 @@
+@import "src/Theme.scss";
+
+.sidebar {
+  position: fixed;
+  width: 15vw;
+  height: 96vh;
+  overflow: auto;
+  color: $color-text-light;
+  box-shadow: 9px 9px 18px #10102b,
+  -9px -9px 18px #2c2e79;
+
+  ul {
+    list-style-type: none;
+  }
+
+  &__listitem {
+    padding: 1rem;
+    background-color: #e85067;
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.2rem;
+  }
+  &__listitem:hover{
+    background-color: #61dafb;
+  }
+  a {
+    color: palegreen;
+    text-decoration: none;
+  }
+
+
+}
