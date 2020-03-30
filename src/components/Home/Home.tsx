@@ -9,7 +9,6 @@ interface OwnProps {
 type Props = OwnProps;
 
 const Home: FunctionComponent<Props> = (props) => {
-
     return (
         <main className={'home'}>
             <Sidebar/>

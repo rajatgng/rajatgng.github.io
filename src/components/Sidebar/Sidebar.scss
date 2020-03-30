@@ -14,20 +14,110 @@
   }
 
   &__listitem {
-    padding: 1rem;
-    background-color: #e85067;
     width: 100%;
     text-decoration: none;
     list-style: none;
-    font-size: 1.2rem;
-  }
-  &__listitem:hover{
-    background-color: #61dafb;
-  }
-  a {
-    color: palegreen;
-    text-decoration: none;
+    box-shadow: inset 9px 9px 18px #10102b,
+    inset -9px -9px 18px #2c2e79;
+    font-size: 2rem;
+
+    a {
+      letter-spacing: .1rem;
+      padding: 1rem;
+      display: block;
+      color: #fa983a;
+      text-decoration: none;
+
+      span {
+        margin-left: 1rem;
+      }
+    }
+
+    .icon {
+      &-logo {
+        color: $color-icon-logo;
+        margin-left: .3rem;
+      }
+
+      &-about {
+        color: $color-icon-about;
+        margin-left: .3rem;
+      }
+
+      &-exp {
+        color: $color-icon-exp;
+        margin-left: .3rem;
+      }
+
+      &-pro {
+        color: $color-icon-pro;
+        margin-left: .3rem;
+      }
+
+      &-skill {
+        color: $color-icon-skill;
+        margin-left: .3rem;
+      }
+
+      &-edu {
+        color: $color-icon-edu;
+        margin-left: .3rem;
+      }
+
+      &-cert {
+        color: $color-icon-cert;
+        margin-left: .3rem;
+      }
+
+      &-cont {
+        color: $color-icon-cont;
+        margin-left: .3rem;
+      }
+
+      &-resume {
+        color: $color-icon-resume;
+        margin-left: .3rem;
+      }
+    }
   }
 
+  &__listitem:hover {
+    background-color: #30336b;
+  }
 
+  &-logo:hover {
+    border-left: .3rem solid $color-icon-logo;
+  }
+
+  &-about:hover {
+    border-left: .3rem solid $color-icon-about;
+  }
+
+  &-exp:hover {
+    border-left: .3rem solid $color-icon-exp;
+  }
+
+  &-pro:hover {
+    border-left: .3rem solid $color-icon-pro;
+  }
+
+  &-skill:hover {
+    border-left: .3rem solid $color-icon-skill;
+  }
+
+  &-edu:hover {
+    border-left: .3rem solid $color-icon-edu;
+  }
+
+  &-cert:hover {
+    border-left: .3rem solid $color-icon-cert;
+  }
+
+  &-cont:hover {
+    border-left: .3rem solid $color-icon-cont;
+  }
+
+  &-resume:hover {
+    border-left: .3rem solid $color-icon-resume;
+  }
 }

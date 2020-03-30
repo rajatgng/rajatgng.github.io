@@ -1,14 +1,13 @@
-import React, {FunctionComponent} from 'react';
+import React from 'react';
 import About from "./About/About";
 import './Content.scss';
 import Education from "./Education/Education";
 
-interface OwnProps {
+interface ContentProps {
 }
 
-type Props = OwnProps;
 
-const Content: FunctionComponent<Props> = (props) => {
+const Content: React.FC<ContentProps> = (props: ContentProps) => {
 
     return (
         <section className={'content'}>

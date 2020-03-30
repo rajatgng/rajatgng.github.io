@@ -1,5 +1,6 @@
 import React, {FunctionComponent} from 'react';
 import './About.scss';
+
 interface OwnProps {
 }
 
