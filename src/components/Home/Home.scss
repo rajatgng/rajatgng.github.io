@@ -1,6 +1,12 @@
 @import "src/Theme.scss";
 
 .home {
+  display: flex;
   color: $color-text-light;
-  padding: 1vw;
+  padding: 1rem;
+
+  &--margin-fixes {
+    width: 15%;
+    min-width: 20rem;
+  }
 }

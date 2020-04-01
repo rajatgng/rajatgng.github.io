@@ -70,7 +70,7 @@ const Sidebar: FunctionComponent<Props> = (props) => {
                     </a>
                 </li>
                 <li className={'sidebar__listitem sidebar-resume'}>
-                    <a aria-label="Open Rajat's resume in a new tab">
+                    <a aria-label="Open Rajat's resume in a new tab" onClick={()=>alert("Hell")}>
                         <DescriptionIcon className={'icon-resume'}/>
                         <span>Resume</span>
                     </a>

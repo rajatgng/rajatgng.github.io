@@ -12,6 +12,7 @@ const Home: FunctionComponent<Props> = (props) => {
     return (
         <main className={'home'}>
             <Sidebar/>
+            <div className={'home--margin-fixes'}/>
             <Content/>
         </main>
     );

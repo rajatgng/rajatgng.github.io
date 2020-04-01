@@ -2,9 +2,10 @@
 
 .sidebar {
   position: fixed;
-  width: 15vw;
-  height: 96vh;
-  overflow: auto;
+  width: 15%;
+  min-width: 20rem;
+  height: 99vh;
+  overflow: hidden;
   color: $color-text-light;
   box-shadow: 9px 9px 18px #10102b,
   -9px -9px 18px #2c2e79;
@@ -86,7 +87,7 @@
   }
 
   &-logo:hover {
-    border-left: .3rem solid $color-icon-logo;
+    background-color: $color-primary;
   }
 
   &-about:hover {
@@ -118,6 +119,48 @@
   }
 
   &-resume:hover {
+    border-left: .3rem solid $color-icon-resume;
+  }
+
+  &-resume {
+    cursor: pointer;
+  }
+
+  //for active state of each list
+
+  //&-logo--active {
+  //  border-left: .3rem solid $color-icon-logo;
+  //}
+
+  &-about--active {
+    border-left: .3rem solid $color-icon-about;
+  }
+
+  &-exp--active {
+    border-left: .3rem solid $color-icon-exp;
+  }
+
+  &-pro--active {
+    border-left: .3rem solid $color-icon-pro;
+  }
+
+  &-skill--active {
+    border-left: .3rem solid $color-icon-skill;
+  }
+
+  &-edu--active {
+    border-left: .3rem solid $color-icon-edu;
+  }
+
+  &-cert--active {
+    border-left: .3rem solid $color-icon-cert;
+  }
+
+  &-cont--active {
+    border-left: .3rem solid $color-icon-cont;
+  }
+
+  &-resume--active {
     border-left: .3rem solid $color-icon-resume;
   }
 }
