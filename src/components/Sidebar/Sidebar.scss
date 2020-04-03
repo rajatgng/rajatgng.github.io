@@ -90,43 +90,74 @@
     background-color: $color-primary;
   }
 
-  &-about, &-about:hover {
-    border-left: .3rem solid $color-icon-about;
+  &-about {
+    border-left: 0 solid $color-icon-about;
   }
 
-  &-exp, &-exp:hover {
-    border-left: .3rem solid $color-icon-exp;
+  &-exp {
+    border-left: 0 solid $color-icon-exp;
   }
 
-  &-pro, &-pro:hover {
-    border-left: .3rem solid $color-icon-pro;
+  &-pro {
+    border-left: 0 solid $color-icon-pro;
   }
 
-  &-skill, &-skill:hover {
-    border-left: .3rem solid $color-icon-skill;
+  &-skill {
+    border-left: 0 solid $color-icon-skill;
   }
 
-  &-edu, &-edu:hover {
-    border-left: .3rem solid $color-icon-edu;
+  &-edu {
+    border-left: 0 solid $color-icon-edu;
   }
 
-  &-cert, &-cert:hover {
-    border-left: .3rem solid $color-icon-cert;
+  &-cert {
+    border-left: 0 solid $color-icon-cert;
   }
 
-  &-cont, &-cont:hover {
-    border-left: .3rem solid $color-icon-cont;
-  }
-
-  &-resume, &-resume:hover {
-    border-left: .3rem solid $color-icon-resume;
+  &-cont {
+    border-left: 0 solid $color-icon-cont;
   }
 
   &-resume {
     cursor: pointer;
+    border-left: 0 solid $color-icon-resume;
   }
 
-  &-border-inactive {
-    border-width: 0.0rem;
+  //on hover
+
+  &-about:hover {
+    border-left: .3rem solid $color-icon-about;
+  }
+
+  &-exp:hover {
+    border-left: .3rem solid $color-icon-exp;
+  }
+
+  &-pro:hover {
+    border-left: .3rem solid $color-icon-pro;
+  }
+
+  &-skill:hover {
+    border-left: .3rem solid $color-icon-skill;
+  }
+
+  &-edu:hover {
+    border-left: .3rem solid $color-icon-edu;
+  }
+
+  &-cert:hover {
+    border-left: .3rem solid $color-icon-cert;
+  }
+
+  &-cont:hover {
+    border-left: .3rem solid $color-icon-cont;
+  }
+
+  &-resume:hover {
+    border-left: .3rem solid $color-icon-resume;
+  }
+
+  &-border-active {
+    border-width: 0.3rem;
   }
 }

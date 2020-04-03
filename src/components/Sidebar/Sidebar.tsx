@@ -1,4 +1,4 @@
-import React, {FunctionComponent, useEffect, useRef} from 'react';
+import React, {FunctionComponent} from 'react';
 import './Sidebar.scss';
 import PersonIcon from '@material-ui/icons/Person';
 import TrendingUpIcon from '@material-ui/icons/TrendingUp';
@@ -51,10 +51,7 @@ const Sidebar: FunctionComponent<Props> = (props) => {
                         <span>Skills</span>
                     </a>
                 </li>
-                <li id={'edu'} className={'sidebar__listitem sidebar-edu'} onClick={()=>{
-                    let k = document.getElementById('edu');
-                    k?.classList.add('sidebar-edu--active');
-                }}>
+                <li className={'sidebar__listitem sidebar-edu'}>
                     <a aria-label="Navigate to the Education section" href={"#education"}>
                         <SchoolIcon className={'icon-edu'}/>
                         <span>Education</span>
@@ -73,7 +70,7 @@ const Sidebar: FunctionComponent<Props> = (props) => {
                     </a>
                 </li>
                 <li className={'sidebar__listitem sidebar-resume'}>
-                    <a aria-label="Open Rajat's resume in a new tab" onClick={()=>alert("Hell")}>
+                    <a aria-label="Open Rajat's resume in a new tab" onClick={() => alert("Hell")}>
                         <DescriptionIcon className={'icon-resume'}/>
                         <span>Resume</span>
                     </a>
