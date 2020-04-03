@@ -8,7 +8,6 @@ interface ContentProps {
 
 
 const Content: React.FC<ContentProps> = (props: ContentProps) => {
-
     return (
         <section className={'content'}>
             <About/>

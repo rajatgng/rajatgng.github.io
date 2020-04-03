@@ -51,7 +51,10 @@ const Sidebar: FunctionComponent<Props> = (props) => {
                         <span>Skills</span>
                     </a>
                 </li>
-                <li className={'sidebar__listitem sidebar-edu'}>
+                <li id={'edu'} className={'sidebar__listitem sidebar-edu'} onClick={()=>{
+                    let k = document.getElementById('edu');
+                    k?.classList.add('sidebar-edu--active');
+                }}>
                     <a aria-label="Navigate to the Education section" href={"#education"}>
                         <SchoolIcon className={'icon-edu'}/>
                         <span>Education</span>
