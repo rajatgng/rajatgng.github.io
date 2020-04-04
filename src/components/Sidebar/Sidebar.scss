@@ -21,6 +21,7 @@
     box-shadow: inset 9px 9px 18px #10102b,
     inset -9px -9px 18px #2c2e79;
     font-size: 2rem;
+    transition: border-left .2s ease-out;
 
     a {
       letter-spacing: .1rem;

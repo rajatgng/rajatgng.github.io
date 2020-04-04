@@ -1,6 +1,11 @@
 import React, {useEffect, useRef} from 'react';
 
-const ActiveViewport: React.FC<any> = ({component: Component, ...rest}) => {
+interface ActiveViewportProps {
+    component: React.ReactNode;
+    type: string;
+}
+
+const ActiveViewport: React.FC<ActiveViewportProps> = ({component: Component, ...rest}) => {
     const sectionRef = useRef(null);
     const {type} = rest;
     let threshold: number[] = [];
@@ -12,7 +17,8 @@ const ActiveViewport: React.FC<any> = ({component: Component, ...rest}) => {
         let targetElement = document.getElementsByClassName(`sidebar-${type}`);
         let parentArea = entries[0].rootBounds!.height;
         let childArea = entries[0].intersectionRect.height;
-        let visibleArea = childArea / parentArea;
+        let visibleArea = +(childArea / parentArea).toFixed(2);
+
         if (visibleArea >= 0.7) {
             targetElement[0]?.classList.add('sidebar-border-active');
         } else if (visibleArea <= 0.3) {
@@ -27,7 +33,7 @@ const ActiveViewport: React.FC<any> = ({component: Component, ...rest}) => {
         return () => {
             observer.disconnect();
         }
-    }, [cb]);
+    }, [cb, threshold]);
 
     return (
         <section {...rest} ref={sectionRef}>
