@@ -23,7 +23,7 @@ const Sidebar: FunctionComponent<Props> = (props) => {
                 <li className={'sidebar__listitem sidebar-logo'}>
                     <a id={"logo-container"} aria-label={"Navigate to the beginning of the page"} href={"#intro"}>
                         <h1>
-                            Rajat Verma<span>Full Stack Developer</span>
+                            Rajat Verma<span>Software Developer</span>
                         </h1>
                     </a>
                 </li>

@@ -6,7 +6,7 @@
   min-width: 20rem;
   height: 99vh;
   overflow: hidden;
-  color: $color-text-light;
+  color: $color-text-light-1;
   box-shadow: 9px 9px 18px #10102b,
   -9px -9px 18px #2c2e79;
 
@@ -27,7 +27,7 @@
       letter-spacing: .1rem;
       padding: 1rem;
       display: block;
-      color: #fa983a;
+      color: $color-text-light-2;
       text-decoration: none;
 
       span {
@@ -85,6 +85,29 @@
 
   &__listitem:hover {
     background-color: #30336b;
+  }
+
+  &-logo {
+    padding: 3rem .5rem 2rem .5rem;
+
+    h1 {
+      text-align: center;
+      line-height: 4rem;
+      letter-spacing: .3rem;
+      color: $color-text-light-3;
+      font-weight: 300;
+      font-size: 4rem;
+    }
+
+    span {
+      margin-top: 1rem;
+      display: block;
+      letter-spacing: .14rem;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 2rem;
+      color: $color-text-light-2;
+    }
   }
 
   &-logo:hover {
