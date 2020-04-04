@@ -13,9 +13,9 @@ html {
 body {
 
     font-family: 'Titillium Web', sans-serif;
-    color: #777777;
+    /*color: #777777;*/
     font-weight: 400;
-    background-color: #1e1f52;
+    /*background-color: #1e1f52;*/
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

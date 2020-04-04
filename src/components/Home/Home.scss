@@ -1,9 +1,10 @@
 @import "src/Theme.scss";
 
-.home {
+.home{
   display: flex;
   color: $color-text-light;
   padding: 1rem;
+  background-color: $color-primary-light;
 
   &--margin-fixes {
     width: 15%;
